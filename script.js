@@ -36,12 +36,13 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Display feedback
+    feedbackDiv.style.display = 'block'
     if (isValid) {
       feedbackDiv.textContent = "Registration successful!";
-      feedbackDiv.style.color = "green";
+      feedbackDiv.style.color = "#28a745";
     } else {
       feedbackDiv.innerHTML = messages.join('<br>');
-      feedbackDiv.style.color = "red";
+      feedbackDiv.style.color = "#dc3545";
     }
   });
 });
